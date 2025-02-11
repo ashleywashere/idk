@@ -669,14 +669,14 @@ do -- ESP Functions
         Components.Box_Outline = Framework:Draw("Square", {Thickness = 3, ZIndex = 1})
         Components.Healthbar = Framework:Draw("Square", {Thickness = 1, ZIndex = 2, Filled = true})
         Components.Healthbar_Outline = Framework:Draw("Square", {Thickness = 3, ZIndex = 1, Filled = true})
-        Components.Name = Framework:Draw("Text", {Text = Instance.Name, Font = 2, Size = 15, Outline = true, Center = true})
-        Components.NameBold = Framework:Draw("Text", {Text = Instance.Name, Font = 2, Size = 15, Center = true})
-        Components.Distance = Framework:Draw("Text", {Font = 2, Size = 15, Outline = true, Center = true})
-        Components.DistanceBold = Framework:Draw("Text", {Font = 2, Size = 15, Center = true})
-        Components.Tool = Framework:Draw("Text", {Font = 2, Size = 15, Outline = true, Center = true})
-        Components.ToolBold = Framework:Draw("Text", {Font = 2, Size = 15, Center = true})
-        Components.Health = Framework:Draw("Text", {Font = 2, Size = 15, Outline = true, Center = true})
-        Components.HealthBold = Framework:Draw("Text", {Font = 2, Size = 15, Center = true})
+        Components.Name = Framework:Draw("Text", {Text = Instance.Name, Font = 3, Size = 14, Outline = true, Center = true})
+        Components.NameBold = Framework:Draw("Text", {Text = Instance.Name, Font = 3, Size = 14, Center = true})
+        Components.Distance = Framework:Draw("Text", {Font = 3, Size = 14, Outline = true, Center = true})
+        Components.DistanceBold = Framework:Draw("Text", {Font = 3, Size = 14, Center = true})
+        Components.Tool = Framework:Draw("Text", {Font = 3, Size = 14, Outline = true, Center = true})
+        Components.ToolBold = Framework:Draw("Text", {Font = 3, Size = 14, Center = true})
+        Components.Health = Framework:Draw("Text", {Font = 3, Size = 14, Outline = true, Center = true})
+        Components.HealthBold = Framework:Draw("Text", {Font = 3, Size = 14, Center = true})
         Components.Chams = _G.chamsEnabled == true and Framework:Instance("Highlight", {Parent = CoreGui, DepthMode = Enum.HighlightDepthMode.AlwaysOnTop}) or true
         Components.Image = Framework:Draw("Image", {Data = self.Settings.Image.Raw})
         self.Objects[Instance] = Object
@@ -712,8 +712,8 @@ do -- ESP Functions
             self:GetObject(Instance):Destroy()
         end
         local Components = Object.Components
-        Components.Name = Framework:Draw("Text", {Text = Object.Name, Color = col, Font = 2, Size = 15, Outline = out, Center = true, Transparency = trans})
-        Components.Addition = Framework:Draw("Text", {Text = Object.Addition.Text, Color = Object.Addition.Color, Font = 2, Size = 15, Outline = out, Center = true, Transparency = trans})
+        Components.Name = Framework:Draw("Text", {Text = Object.Name, Color = col, Font = 3, Size = 14, Outline = out, Center = true, Transparency = trans})
+        Components.Addition = Framework:Draw("Text", {Text = Object.Addition.Text, Color = Object.Addition.Color, Font = 3, Size = 14, Outline = out, Center = true, Transparency = trans})
         self.Objects[Instance] = Object
         return Object
     end
