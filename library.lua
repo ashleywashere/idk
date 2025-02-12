@@ -33,9 +33,9 @@ local library = {
     hovers = {},
     Relations = {},
     folders = {
-        main = "Atlanta",
-        assets = "Atlanta/Images",
-        configs = "Atlanta/Configs"
+        main = "OneTap",
+        assets = "OneTap/Images",
+        configs = "OneTap/Configs"
     },
     shared = {
         initialized = false,
